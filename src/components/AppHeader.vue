@@ -1,105 +1,54 @@
 <script>
 export default{
-    name: "AppHeader"
+    name: "AppHeader",
+
+      data() {
+        return {
+            links: [
+                "Characters",
+                "Comics",
+                "Movies",
+                "Tv", 
+                "Games",
+                "Collectibles",
+                "Videos",
+                "Fans",
+                "News", 
+                "Shop"
+            ],
+
+           
+        }
+    }
+
+
+
+
+
 }
+
+
+
+
 </script>
 
 <template>
 
-    <div class="container-fluid  border p-2">
+    <div class="container-fluid  border p-2 header">
         <nav class="text-center d-flex justify-content-around  align-items-center ">
             <div>
-                <img src="/img/dc-logo.png" alt="">
+                <img  src="/img/dc-logo.png" alt="">
 
             </div>
-            <ul class="d-flex gap-2 list-unstyled text-uppercase align-items-center  ">
-                <li  >
-                    <a href="">
-                        characters
+            <ul class="d-flex gap-2 list-unstyled text-uppercase align-items-center " >
+                <li  v-for="(link, index) in links"
+               
+            >
+                    <a href="" class="text-decoration-none text-dark" >
+                    
+                        {{ link }}
 
                     </a>
-
-                </li>
-
-
-                <li>
-                    <a href="">
-                        comics
-                        
-                    </a>
-
-
-                </li>
-
-
-                <li>
-                    <a href="">
-                        movies
-                        
-                    </a>
-
-
-                </li>
-
-                <li>
-                    <a href="">
-                        tv
-                        
-                    </a>
-
-
-                </li>
-
-                <li>
-                    <a href="">
-                        games
-                        
-                    </a>
-
-
-                </li>
-
-                <li>
-                    <a href="">
-                        collectibles
-                        
-                    </a>
-
-
-                </li>
-                <li>
-                    <a href="">
-                        videos
-                        
-                    </a>
-
-
-                </li>
-                <li>
-                    <a href="">
-                        fans
-                        
-                    </a>
-
-
-                </li>
-
-                <li>
-                    <a href="">
-                        news
-                        
-                    </a>
-
-
-                </li>
-
-                <li>
-                    <a href="">
-                        shop
-                        
-                    </a>
-
-
                 </li>
             </ul>
 
@@ -113,15 +62,8 @@ export default{
 </template>
 
 <style lang="scss">
-img{
-    width: 50px;
-    height: 50px;
-}
 
-ul{
-    font-size: 12px;
-    font-weight: bold;
-}
+@use '../styles/header.scss' as *;
 
 
 
