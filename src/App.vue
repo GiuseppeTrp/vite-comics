@@ -10,5 +10,9 @@ export default { components:{
 </template>
 
 <style lang="scss" >
+a{
+  text-decoration: none;
+  color: black;
+}
 
 </style>
