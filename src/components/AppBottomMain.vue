@@ -66,7 +66,7 @@ export default{
     </script>
 
 <template>
-  <div class="container-fluid d-flex flex-wrap flex-row gap-2 flex-wrap text-white" id="background">
+  <div class="container-fluid d-flex flex-wrap flex-row gap-2 flex-wrap text-white " id="background">
     
     <div v-for="currentLinkList in linksMiddle" class="  d-flex flex-column text-center  py-5" >
         <h4 class="title-link">{{ currentLinkList.title }}</h4>
@@ -75,8 +75,8 @@ export default{
             
         </ul>
     </div>
-    <div  id="content">
-      <img src="/public/img/dc-logo-bg.png" alt="">
+    <div  id="content" class="d-flex justify-content-end">
+      <img   src="/public/img/dc-logo-bg.png" alt="">
     
     </div>
           
@@ -115,6 +115,7 @@ export default{
 #content img{
   width: 80%;
   object-fit: contain;
+  
   
 }
 
