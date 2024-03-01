@@ -66,23 +66,25 @@ export default{
     </script>
 
 <template>
-    <div class="container d-flex flex-wrap flex-row">
-        <ul class="list-unstyled text-uppercase">
-          <li v-for="(link, index) in linksMiddle" :key="index">
-            <a href="" class="text-decoration-none text-dark">
-              {{ link.title }}
-            </a>
-            <ul class="list-unstyled d-flex flex-wrap flex-column"> <!-- Modificata la classe d-flex -->
-              <li v-for="(subLink, subIndex) in link.links" :key="subIndex">
-                <a href="" class="text-decoration-none text-dark fw-light">
-                  {{ subLink }}
-                </a>
-              </li>
-            </ul>
-          </li>
+  <div class="container-fluid d-flex flex-wrap flex-row gap-2 flex-wrap text-white" id="background">
+    
+    <div v-for="currentLinkList in linksMiddle" class="  d-flex flex-column text-center  py-5" >
+        <h4 class="title-link">{{ currentLinkList.title }}</h4>
+        <ul class="list-unstyled ">
+            <li class="links-bottom" v-for="currentLink in currentLinkList.links" >{{ currentLink }}</li>
+            
         </ul>
-      </div>
-      
+    </div>
+    <div  id="content">
+      <img src="/public/img/dc-logo-bg.png" alt="">
+    
+    </div>
+          
+
+    
+    
+</div>
+
       
       
       
@@ -94,6 +96,29 @@ export default{
 
 </template>
 
-<style>
+<style lang="scss">
+.links-bottom{
+  font-size: 10px;
+}
+
+.title-link{
+  font-size: 15px
+}
+
+#background{
+  background-image: url('../img/footer-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+#content img{
+  width: 80%;
+  object-fit: contain;
+  
+}
+
+
+
 
 </style>
