@@ -75,10 +75,7 @@ export default{
             
         </ul>
     </div>
-    <div  id="content">
-      
     
-    </div>
           
 
     

@@ -41,7 +41,7 @@ export default {
           <div class="social-links d-flex gap-2 align-items-center">
             <strong>Follow Us</strong>
             <ul class="list-unstyled d-flex gap-2 mb-0">
-              <li v-for="currentSocial in socials" :key="currentSocial.name">
+              <li v-for="currentSocial in socials" >
                 <img :src="currentSocial.icon" :alt="currentSocial.name">
               </li>
             </ul>
@@ -60,8 +60,10 @@ export default {
   }
   
   .social-links li {
-    list-style: none; /* Rimuove i punti elenco */
+    list-style: none; 
   }
+
+  
   
   </style>
   
