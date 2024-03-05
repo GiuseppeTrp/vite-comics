@@ -37,7 +37,7 @@ data() {
 <template>
     <div class="middle-main container-fluid border">
       <div class="container-fluid">
-        <p class="container-fluid text-uppercase p-3">
+        <p class="container-fluid text-uppercase p-5">
           <ul class="d-flex gap-5 list-unstyled text-uppercase  justify-content-center ">
             <li class="d-flex gap-2 " v-for="(Middlelink, index) in linksMiddle" :key="index">
               <img :src="Middlelink.image" alt="">

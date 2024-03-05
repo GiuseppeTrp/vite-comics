@@ -90,12 +90,12 @@ export default {
 <template>
   <div class="top-main container-fluid border">
     <div class="container-fluid">
-      <p class="container-fluid text-uppercase p-3">
+      <p class="container text-uppercase p-3">
         <div class="main-slide">
           
-          <div class="current-series border ">Current Series</div>
+          <div class="current-series border d-inline-block   bg-primary p-2 rounded ">Current Series</div>
         </div>
-        <div class="container-fluid d-flex flex-wrap gap-2 ">
+        <div class="container d-flex flex-wrap gap-2  justify-content-center ">
             <AppSlider class="d-flex" v-for="slide in sliders" :thumb="slide.series" :image="slide.thumb"></AppSlider>
             
         </div>
@@ -111,6 +111,13 @@ export default {
 
 <style lang="scss">
 @use '../styles/topMain.scss' as *;
+.current-series{
+  position:relative;
+  bottom: 30px;
+  left: 30px;
+  
+  
+}
 
 
 </style>

@@ -34,7 +34,7 @@ export default{
 
 <template>
 
-    <div class="container-fluid  border p-2 header">
+    <div class="container-fluid   p-2 header m-3">
         <nav class="text-center d-flex justify-content-around  align-items-center ">
             <div>
                 <img  src="/img/dc-logo.png" alt="">

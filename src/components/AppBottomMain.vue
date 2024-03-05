@@ -68,14 +68,17 @@ export default{
 <template>
   <div class="container-fluid d-flex flex-wrap flex-row gap-2 flex-wrap text-white justify-content-center" id="background">
     
-    <div v-for="currentLinkList in linksMiddle" class="  d-flex flex-column text-center  py-5" >
+    <div v-for="currentLinkList in linksMiddle" class=" d-flex flex-column text-center  py-5" >
         <h4 class="title-link">{{ currentLinkList.title }}</h4>
         <ul class="list-unstyled ">
             <li class="links-bottom" v-for="currentLink in currentLinkList.links" >{{ currentLink }}</li>
             
         </ul>
     </div>
+    <div  id="content" class="content-background">
+      
     
+    </div>
           
 
     
