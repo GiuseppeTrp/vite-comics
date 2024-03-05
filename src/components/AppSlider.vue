@@ -11,9 +11,9 @@ export default {
 </script>
 
 <template>
-  <div class="comic d-flex flex-column">
+  <div class="comic d-flex flex-column mx-1">
     <img :src="image" alt="" class="comic-cover">
-    <h6>{{ thumb }}</h6>
+    <h6 class="text-center ">{{ thumb }}</h6>
   </div>
 </template>
 

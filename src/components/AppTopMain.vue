@@ -95,7 +95,7 @@ export default {
           
           <div class="current-series border d-inline-block   bg-primary p-2 rounded ">Current Series</div>
         </div>
-        <div class="container d-flex flex-wrap gap-2  justify-content-center ">
+        <div class="container d-flex flex-wrap gap-2  justify-content-center  ">
             <AppSlider class="d-flex" v-for="slide in sliders" :thumb="slide.series" :image="slide.thumb"></AppSlider>
             
         </div>
